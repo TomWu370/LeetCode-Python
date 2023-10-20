@@ -12,7 +12,6 @@ class Solution:
 
             i = (start + end) // 2
             j = ((len(nums1) + len(nums2) + 1) // 2) - i
-          
              
             l1 = float(-inf) if i == 0 else nums1[i-1]
             r1 = float(inf) if i == len(nums1) else nums1[i]
