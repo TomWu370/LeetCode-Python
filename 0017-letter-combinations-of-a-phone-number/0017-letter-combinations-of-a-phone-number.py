@@ -39,7 +39,6 @@ class Solution:
                  
         return result
 
-
 # digit are only in range of 2-9 therefore we only care about the alphabet
 # the length of digits determines the length of the output items in the output list
 # Need to have dynamic mehod that expands as we have more digits
