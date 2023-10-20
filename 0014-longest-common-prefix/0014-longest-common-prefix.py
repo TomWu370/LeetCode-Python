@@ -18,6 +18,7 @@ class Solution:
                 return prefix
         return "" 
 
+
 # i = 0, since it's prefix i stays at 0
 # declare a for loop going backwards from length of the smallest item, this is because smaller item can't contain more letter than the longer one
 # for each substring, check if prefix exist in all other items, if true then return prefix, if none found return empty string or move to next substring
