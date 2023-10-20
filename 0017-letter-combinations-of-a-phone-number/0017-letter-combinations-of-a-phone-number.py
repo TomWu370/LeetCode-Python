@@ -43,7 +43,7 @@ class Solution:
 # the length of digits determines the length of the output items in the output list
 # Need to have dynamic mehod that expands as we have more digits
 # for the first letter, get lists of available item, then for each item, recursively call a method that will do the same but for next item
-# 2,3,
+# 2,3,4
 # abc, def, ghi
 # a, ad, adg, adh, adi, ae, aeg,....
 # start with first letter, then pass current letter to next recursive method call, then if there are more depth
