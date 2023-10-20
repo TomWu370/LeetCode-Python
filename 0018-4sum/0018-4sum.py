@@ -31,3 +31,4 @@ class Solution:
         return answers
 
 # on the basis of 3Sum add 1 more pointer, and set the 1st pointer, aka j, as fixed but also i+1
+# also check if combination is already in list or not, as 4Sum wants unique solutions
