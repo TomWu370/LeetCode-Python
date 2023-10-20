@@ -7,5 +7,4 @@ class Solution:
         else:
             return False
         
-
 # str[::-1] to reverse
