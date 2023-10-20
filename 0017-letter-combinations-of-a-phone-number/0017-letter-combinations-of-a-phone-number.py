@@ -12,13 +12,13 @@ class Solution:
                     '8':['t','u','v'],
                     '9':['w','x','y','z']}
 
-        def traverse(let, i, digits, numToLet, result):
+        def traverse(let, i, result):
             letters = numToLet[digits[i]]
             for l in letters:
 
                 if i < len(digits)-1:
-                    traverse(let+l, i+1, digits, numToLet, result)
-                elif i == len(digits)-1:
+                    traverse(let+l, i+1, result)
+                else:
                     result.append(let+l)
             return result
 
@@ -29,7 +29,7 @@ class Solution:
         for let in letters:
             # 2 or more digits
             if i < len(digits)-1:
-                traverse(let, i+1, digits, numToLet, result)
+                traverse(let, i+1, result)
 
             # 1st iteration takes care of single digit
             else:
