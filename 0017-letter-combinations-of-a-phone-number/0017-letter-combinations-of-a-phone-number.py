@@ -11,25 +11,25 @@ class Solution:
                     '7':['p','q','r','s'],
                     '8':['t','u','v'],
                     '9':['w','x','y','z']}
+        result = []
 
-        def traverse(let, i, result):
+        def traverse(let, i):
             letters = numToLet[digits[i]]
             for l in letters:
 
                 if i < len(digits)-1:
-                    traverse(let+l, i+1, result)
+                    traverse(let+l, i+1)
                 else:
                     result.append(let+l)
             return result
 
-        result = []
         i=0
         letters = numToLet[digits[i]]
         # still digits down the chain
         for let in letters:
             # 2 or more digits
             if i < len(digits)-1:
-                traverse(let, i+1, result)
+                traverse(let, i+1)
 
             # 1st iteration takes care of single digit
             else:
