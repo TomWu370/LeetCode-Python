@@ -44,7 +44,6 @@ class Solution:
 # Need to have dynamic mehod that expands as we have more digits
 # for the first letter, get lists of available item, then for each item, recursively call a method that will do the same but for next item
 # a, ad, adg, adh, adi, ae, aeg,....
-# ignore the strings with length less than len(digits)
 # start with first letter, then pass current letter to next recursive method call, then if there are more depth
 # pass the previous letter + current letter as the new letter
 # repeat until end of depth is reached, then append the current letter with each new letter
