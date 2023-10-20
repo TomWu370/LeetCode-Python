@@ -2,11 +2,6 @@ class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         if len(nums) < 3:
             return []
-        elif len(nums) == 3:
-            if (nums[0] + nums[1] + nums[2]) == 0:
-                return [nums]
-            else:
-                return []
         nums.sort(reverse=True)
 
         answers = []
@@ -17,15 +12,17 @@ class Solution:
             k = len(nums)-1
 
             while j < k:
+                sum = (nums[i] + nums[j] + nums[k]) 
 
-                if (nums[i] + nums[j] + nums[k]) == 0:
+                if sum == 0:
                     triplet = [nums[i], nums[j], nums[k]]
-                    answers.append(triplet)
+                    if triplet not in answers:
+                        answers.append(triplet)
                     while j < k and nums[j] == triplet[1]:
                         j += 1
                     while j < k and nums[k] == triplet[2]:
                         k -= 1
-                elif (nums[i] + nums[j] + nums[k]) > 0:
+                elif sum > 0:
                     j += 1
                 else:
                     k -= 1
