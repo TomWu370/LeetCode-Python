@@ -14,8 +14,6 @@ class Solution:
    
                 while k < l:
                     sum = nums[i] + nums[j] + nums[k] + nums[l]
-                    #print(f'sum',sum,'k:',k,'l:',l)
-                    # return [[0]]
                     if sum == target and [nums[i], nums[j], nums[k], nums[l]] not in answers:
                         quadruplet = [nums[i], nums[j], nums[k], nums[l]]
                         answers.append(quadruplet)
@@ -32,8 +30,4 @@ class Solution:
               
         return answers
 
-
-
-
-
-# on the basis of 3Sum add 1 more pointer
+# on the basis of 3Sum add 1 more pointer, and set the 1st pointer, aka j, as fixed but also i+1
