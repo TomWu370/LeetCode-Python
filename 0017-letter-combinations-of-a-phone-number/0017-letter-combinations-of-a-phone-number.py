@@ -12,6 +12,8 @@ class Solution:
                     '8':['t','u','v'],
                     '9':['w','x','y','z']}
         result = []
+        i=0
+        letters = numToLet[digits[i]]
 
         def traverse(let, i):
             letters = numToLet[digits[i]]
@@ -23,8 +25,6 @@ class Solution:
                     result.append(let+l)
             return result
 
-        i=0
-        letters = numToLet[digits[i]]
         # still digits down the chain
         for let in letters:
             # 2 or more digits
