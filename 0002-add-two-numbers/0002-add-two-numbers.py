@@ -33,11 +33,8 @@ class Solution:
                 answer = ListNode(sum)
             else:
                 temp = ListNode(sum)
-                print(answer)
                 next.next = temp
-                print(answer)
                 next = temp
-                print(answer)
                 
             if not (l1 or l2):
                 if carry != 0:
