@@ -11,7 +11,6 @@ class Solution:
                 i += 1
         return answer
 
-
 # find 2 line that gives the largest area
 # return max area
 # difference in i = length
