@@ -1,7 +1,5 @@
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
-        if len(nums) < 4:
-            return []
         nums.sort(reverse=True)
         answers = []
         for i in range(len(nums)-3):
