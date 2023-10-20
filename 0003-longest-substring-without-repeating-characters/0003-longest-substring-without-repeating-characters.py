@@ -4,7 +4,7 @@ class Solution:
         current = ""
         for i in range(len(s)):
             current = s[i]
-
+            
             for j in range(i+1, len(s)):
                 if s[j] not in current:
                     current += s[j]
@@ -17,8 +17,6 @@ class Solution:
         if not longest or len(current) > len(longest):
             longest = current
 
-
-  
         return len(longest)
 
 # keep track of longest substring
