@@ -20,12 +20,14 @@ class Solution:
             for l in letters:
 
                 if i < len(digits)-1:
+                    # recursively go down the digit depth, with previous letter + current letter
                     traverse(let+l, i+1)
+                # only start appending to final list when end is reached
                 else:
                     result.append(let+l)
             return result
 
-        # still digits down the chain
+        # start with first digit
         for let in letters:
             # 2 or more digits
             if i < len(digits)-1:
@@ -42,11 +44,9 @@ class Solution:
 # the length of digits determines the length of the output items in the output list
 # Need to have dynamic mehod that expands as we have more digits
 # for the first letter, get lists of available item, then for each item, recursively call a method that will do the same but for next item
-# use while loop to increment i until it reaches end of list
 # 2,3,4
 # abc, def, ghi
-# for 2, with a, 3 exist
 # a, ad, adg, adh, adi, ae, aeg,....
-# pick first element then move onto next element
-# pick first letter, then move to next digit if not end, then fill first letter with 2nd letters, return list when end
-# otherwise continue process
+# start with first letter, then pass current letter to next recursive method call, then if there are more depth
+# pass the previous letter + current letter as the new letter
+# repeat until end of depth is reached, then append the current letter with each new letter
