@@ -5,6 +5,7 @@ class Solution:
         for i in range(len(nums)-2):
             j = i + 1
             k = len(nums)-1
+            
             while j < k:
                 sum = nums[i] + nums[j] + nums[k]
                 difference = target - sum
@@ -27,3 +28,6 @@ class Solution:
 # only need to output the closest result
 # difference determined by difference between sum and target
 # subtract target from sum then if result is negative then sum > target, otherwise sum < target
+
+# key difference between 15.3Sum, in 15. the solutions can't be the same and has multiple solution,
+# therefore there is a need to skip i, if the values repeat, to ensure multiple solution don't have the same values
