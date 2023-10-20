@@ -16,8 +16,7 @@ class Solution:
 
                 if sum == 0:
                     triplet = [nums[i], nums[j], nums[k]]
-                    if triplet not in answers:
-                        answers.append(triplet)
+                    answers.append(triplet)
                     while j < k and nums[j] == triplet[1]:
                         j += 1
                     while j < k and nums[k] == triplet[2]:
