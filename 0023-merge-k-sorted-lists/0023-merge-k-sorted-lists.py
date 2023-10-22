@@ -32,5 +32,5 @@ class Solution:
 
 
 # similar to merging 2 sorted linked list
-# however for the while loop, instead of specifying that the 2 linked list should be True
-# use all function to check if all linked list are True
+# however for each list, sort ith and i+1th list, then make ith list value into the resulting merged list
+# continue until you merged each list individually, then return the ith list
