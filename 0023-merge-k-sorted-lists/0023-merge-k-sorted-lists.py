@@ -1,0 +1,36 @@
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        def mergeTwoLists(list1, list2):
+            newList = ListNode()
+            temp = newList
+            while list1 and list2:
+                if list1.val <= list2.val:
+                    temp.next = list1
+                    temp = temp.next
+                    list1 = list1.next
+                else:
+                    temp.next = list2
+                    temp = temp.next
+                    list2 = list2.next
+            if list1 or list2:
+                temp.next = list1 if list1 else list2
+            
+            return newList.next
+        list1 = None
+        for i in range(len(lists)):
+            if i == 0:
+                list1 = lists[i]
+                continue
+            list1 = mergeTwoLists(list1, lists[i])
+
+        return list1
+
+
+# similar to merging 2 sorted linked list
+# however for the while loop, instead of specifying that the 2 linked list should be True
+# use all function to check if all linked list are True
