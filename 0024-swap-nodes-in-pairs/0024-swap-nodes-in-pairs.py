@@ -15,7 +15,6 @@ class Solution:
                 return second
             else:
                 return head
-
         return recurse(head)
 
 # recursively go through list
