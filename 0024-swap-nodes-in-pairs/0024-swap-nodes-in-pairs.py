@@ -6,7 +6,6 @@
 class Solution:
     def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
         def recurse(head):
-            second = None
             if head and head.next:
                 second = ListNode(head.next.val)
                 current = ListNode(head.val)
