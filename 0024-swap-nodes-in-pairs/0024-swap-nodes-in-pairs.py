@@ -19,7 +19,6 @@ class Solution:
 
         return recurse(head)
 
-
 # recursively go through list
 # check if has next item
 # if True, then create temp Node with next item as value, set the next as the current node value
