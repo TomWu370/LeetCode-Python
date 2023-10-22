@@ -18,7 +18,6 @@ class Solution:
                 return head
 
         return recurse(head)
-        
 
 # recursively go through list
 # check if has next item
