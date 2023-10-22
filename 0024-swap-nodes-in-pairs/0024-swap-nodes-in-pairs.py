@@ -23,4 +23,4 @@ class Solution:
 # then finally set the next of that to the current list's next next value
 # check if exist, with if not list.next and list.next.next
 # otherwise set to None
-# then set current.next as recursion of the current operatio
+# then set current.next as recursion of the current operation
