@@ -33,4 +33,4 @@ class Solution:
 
 # similar to merging 2 sorted linked list
 # however for each list, sort ith and i+1th list, then make ith list value into the resulting merged list
-# continue until you merged each list individually, then return the ith li
+# continue until you merged each list individually, then return the ith list
