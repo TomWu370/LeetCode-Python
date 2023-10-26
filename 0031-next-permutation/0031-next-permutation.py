@@ -25,7 +25,8 @@ class Solution:
 # if not, continue going back the list
 # until encounter a smaller value or no value found
 # if found then insert like normal, however this would mean the value found is a few index behind the current index
-# therefore take the difference between index then propagate through the list,swapping each pair, this will achieve inserting the value inside the list
+# therefore take the difference between index then propagate through the list,swapping each pair, this will achieve inserting the 
+# value inside the list
 # if not then because of this special condition, all values should be in descending order now
 # therefore return list sorted in ascending order as per requirements
 
@@ -36,4 +37,4 @@ class Solution:
 # go through list, go to next index if the current is more than the next index down the list
 # if the current index is more than the next left index, then set 2nd pointer to current +1
 # move this 2nd pointer until we encounter a value that is less than or equal to current value
-# then we swap these 2 values, then sort the rest of the list
+# then we swap these 2 values, then sort the rest of the lis
