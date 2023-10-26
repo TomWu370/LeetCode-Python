@@ -6,7 +6,7 @@ class Solution:
         # goes backwards
         for i in range(len(nums)-2, -1, -1):
             if nums[i] >= nums[i+1]:
-                # keep going if more next is more less than current
+                # keep going if next is more than current
                 continue
 
             j = i+1
@@ -37,4 +37,4 @@ class Solution:
 # go through list, go to next index if the current is more than the next index down the list
 # if the current index is more than the next left index, then set 2nd pointer to current +1
 # move this 2nd pointer until we encounter a value that is less than or equal to current value
-# then we swap these 2 values, then sort the rest of the lis
+# then we swap these 2 values, then sort the rest of the list
