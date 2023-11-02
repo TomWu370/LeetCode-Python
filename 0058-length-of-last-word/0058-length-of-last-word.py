@@ -9,7 +9,6 @@ class Solution:
                 break
             else:
                 answer += i
-
         return len(answer)
 
 # essentially delimit by space then return last item in list
