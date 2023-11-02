@@ -1,9 +1,17 @@
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        words = s.strip().split(' ')
+        answer = ''
+        for i in reversed(s):
+            print(i)
+            if i == ' ':
+                if not answer:
+                    continue
+                break
+                
+            else:
+                answer += i
 
-        return len(words[-1])
-
+        return len(answer)
 
 # essentially delimit by space then return last item in list
 # and finally, remove empty strings for edge cases where there are space at the end
@@ -11,7 +19,7 @@ class Solution:
 # or faster method since we don't care about space in between, only at the edges
 # we can just use strip
 
-# other method includes pointers or iterator
+# faster and more efficient way includes pointers or iterator
 # traverse each item in the string backwards
 # reversed can reverse most iterators
 # if answer is empty then ignore space until answer is not empty
