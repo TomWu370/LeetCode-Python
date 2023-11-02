@@ -7,7 +7,6 @@ class Solution:
                 if not answer:
                     continue
                 break
-                
             else:
                 answer += i
 
