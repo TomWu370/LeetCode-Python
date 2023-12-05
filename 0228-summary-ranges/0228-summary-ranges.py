@@ -7,22 +7,18 @@ class Solution:
             if not start:
                 start = str(nums[i])
 
-            if i < len(nums)-1 and nums[i+1] != nums[i]+1:
-                rang = f'{start}'
+            if i == len(nums)-1 or nums[i+1] != nums[i]+1:
                 if str(nums[i]) != start:
-                    rang += f'->{nums[i]}'
-                ranges.append(rang)
+                    ranges.append(f'{start}->{nums[i]}')
+                else:
+                    ranges.append(start)
                 start = None
-            elif i == len(nums)-1:
-                rang = f'{start}'
-                if str(nums[i]) != start:
-                    rang += f'->{nums[i]}'
-                ranges.append(rang)
-                start = None
+
         return ranges
 
 
 
 # start = 0, or after first range, first item
 # end = the index where next index is not current + 1 or if next is None/empty
+# convert start to a string, this helps evaluating when start is 0
         
