@@ -2,9 +2,9 @@ class Solution {
 public:
     int thirdMax(vector<int>& nums) {
         // higher precision is required to handle edge cases for int precisions
-        double first = -std::numeric_limits<double>::infinity();
-        double second = -std::numeric_limits<double>::infinity();
-        double third = -std::numeric_limits<double>::infinity();
+        long first = LONG_MIN;
+        long second = LONG_MIN;
+        long third = LONG_MIN;
 
         for (int i: nums){
             // if i is more than the first then propagate downwards
@@ -24,7 +24,7 @@ public:
             }
         }
         // return third if not -infinity, otherwise return first
-        return (third > -std::numeric_limits<double>::infinity()) ? third : first;
+        return (third > LONG_MIN) ? third : first;
         
     }
 };
