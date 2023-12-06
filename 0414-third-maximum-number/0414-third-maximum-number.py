@@ -8,7 +8,7 @@ class Solution:
         for i in nums:
             if i == first or i == second or i == third:
                 continue
-            if i > first:
+            elif i > first:
                 third = second
                 second = first
                 first = i
