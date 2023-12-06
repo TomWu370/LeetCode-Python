@@ -19,13 +19,9 @@ public:
             else{
                 tempSum = num1[start1] + num2[start2] + carry - '0'*2;
             }
-            if (carry > 0){
-                carry = 0;
-            }
-            if (tempSum > 9){
-                carry = tempSum / 10;
-                tempSum %= 10;
-            }
+
+            carry = tempSum / 10;
+            tempSum %= 10;
             sum += to_string(tempSum);
         }
         if (carry > 0){
