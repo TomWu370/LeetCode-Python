@@ -18,12 +18,12 @@ public:
                 first = i; 
             }
             // if i is more than second then propagate downwards if i is not equal to first
-            else if (i > second && i != first){
+            else if (i > second){
                 third = second;
                 second = i;
             }
             // only update third if i is more than third but not the same as the previous values
-            else if (i > third && i != second && i != first){
+            else if (i > third){
                 third = i;
             }
         }
