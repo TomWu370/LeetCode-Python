@@ -17,6 +17,5 @@ class Solution:
                 second = i
             elif i > third:
                 third = i
-        print(third)
         return third if third > negInf else first
         
