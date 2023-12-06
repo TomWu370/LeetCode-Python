@@ -7,6 +7,10 @@ public:
         long third = LONG_MIN;
 
         for (int i: nums){
+            // if i equal any existing value then skip to next iteration
+            if (i == first || i == second || i == third){
+                continue;
+            }
             // if i is more than the first then propagate downwards
             if (i > first){
                 third = second;
