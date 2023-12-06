@@ -29,6 +29,5 @@ public:
         }
         // return third if not -infinity, otherwise return first
         return (third > LONG_MIN) ? third : first;
-        
     }
 };
