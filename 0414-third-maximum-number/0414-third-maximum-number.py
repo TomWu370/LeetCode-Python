@@ -1,9 +1,8 @@
 class Solution:
     def thirdMax(self, nums: List[int]) -> int:
-        negInf = -math.inf
-        first = negInf
-        second = negInf
-        third = negInf
+        first = -math.inf
+        second = -math.inf
+        third = -math.inf
 
         for i in nums:
             if i == first or i == second or i == third:
@@ -17,5 +16,5 @@ class Solution:
                 second = i
             elif i > third:
                 third = i
-        return third if third > negInf else first
+        return third if third > -math.inf else first
         
