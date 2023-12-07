@@ -8,5 +8,4 @@ class Solution:
             ans.append(i[0])
         return ans
 
-    
 # use Counter class to get frequencies, Counter will sort the dictionary automatically, then loop through the keys to get K amount
