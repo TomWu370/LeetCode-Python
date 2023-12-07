@@ -5,7 +5,6 @@ public:
             return false;
         }
         double x = log10(n) / log10(3);
-        floor(x)==ceil(x);
         double intCheck;
         return modf(x, &intCheck) == 0;
     }
