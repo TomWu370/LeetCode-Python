@@ -20,7 +20,6 @@ public:
             if (!sayPart.empty()){
                 freq.push_back(sayPart);
             }
-
             say = "";
             for (string fre: freq){
                 say += to_string(fre.size()) + to_string(fre[0]);
