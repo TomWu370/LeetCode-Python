@@ -4,6 +4,7 @@ public:
         string say = "1";
         vector<string> freq;
         string sayPart;
+        
         for (int i = 0; i < n-1; i++){
             freq.clear();
             sayPart = "";
