@@ -4,6 +4,7 @@ public:
         string ans = "";
         char currChar = chars[0];
         int count = 0;
+        
         for (auto c : chars){
             if (c == currChar){
                 count ++;
