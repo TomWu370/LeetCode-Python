@@ -14,7 +14,6 @@ class Solution:
                 # perform append for final set of string
                 freq.append(tempS)
             
-            
             say = ""
             for k in freq:
                 say += str(len(k)) + k[0]
