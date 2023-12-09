@@ -12,3 +12,6 @@ public:
         return s;
     }
 };
+
+// see python for detailed solution, however in c++ there are no automatic adjusting for slicing
+// therefore there is a need to check for whether the slice will exceed maximum size
