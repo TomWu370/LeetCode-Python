@@ -5,6 +5,7 @@ class Solution:
         for i in range(0, len(s), 2*k):
             ans += s[i:i+k][::-1]
             ans += s[i+k:i+2*k]
+            
         return ans
 # if less than k character then return reversed
 # if less than 2k but more than k, then reverse first k characters
