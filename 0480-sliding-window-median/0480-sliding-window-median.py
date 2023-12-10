@@ -13,7 +13,7 @@ class Solution:
         heap = [mid]
 
         for i in range(k, len(nums)):
-            # critical to remove first item
+            # critical to remove first item, use bisect to get the index which the nums[i-k] would be, then use delete to remove
             del sub[bisect.bisect_left(sub, nums[i-k])]
 
             if mid >= 2*mid:
