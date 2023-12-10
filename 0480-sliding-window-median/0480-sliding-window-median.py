@@ -30,8 +30,7 @@ class Solution:
             else:
                 heap.append(sub[index])
 
-        return heap
-        
+        return heap    
 
 # sliding window
 # then for each window, get the subarray
