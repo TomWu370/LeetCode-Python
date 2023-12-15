@@ -1,7 +1,5 @@
 class Solution:
     def uniquePathsIII(self, grid: List[List[int]]) -> int:
-        if grid[0][0] == -1:
-            return 0
         m, n = len(grid), len(grid[0])
         start = ()
         ans = 0
