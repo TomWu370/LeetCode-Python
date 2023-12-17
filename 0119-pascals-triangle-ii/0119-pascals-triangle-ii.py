@@ -10,7 +10,6 @@ class Solution:
 
         return dp[rowIndex]
         
-
 # intution, use the code for pascal's triangle 1, however this is a only return the index of the dp 2d array
 # but rowIndex is still the same as n rows to be generated, so essentially the same code here
 # since the first row is always 1, initialise a dp 2d list to have 1 as the starting value
