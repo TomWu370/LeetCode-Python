@@ -4,8 +4,9 @@ class Solution:
         start = [0, 0]
 
         for p in path:
-            start[0] += paths[p][0]
-            start[1] += paths[p][1]
+            x, y = paths[p]
+            start[0] += x
+            start[1] += y
             if tuple(start) in paths:
                 return True
             else:
