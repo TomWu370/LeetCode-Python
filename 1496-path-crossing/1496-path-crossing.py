@@ -12,7 +12,6 @@ class Solution:
             else:
                 paths[tuple(start)] = True
         return False
-        
 
 # intuition, has a dictionary for checking whether coordinate have been travelled
 # then have 2 for loops for coordinates, store resulting coordinate in dictionary
