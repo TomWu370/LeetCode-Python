@@ -2,7 +2,6 @@ class Solution:
     def makeEqual(self, words: List[str]) -> bool:
         length = len(words)
         counts = Counter("".join(words))
-        
         for count in counts:
             if counts[count] % length != 0:
                 return False
