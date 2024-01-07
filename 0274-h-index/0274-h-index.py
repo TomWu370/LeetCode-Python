@@ -9,4 +9,5 @@ class Solution:
 # intuition, go from big to small, iterate backward from len of citations
 # check if there are at most h paper, with atleast h citations
 # intuition, it's better to first sort the list, then check if the len-ith place is atleast h citations
-# edge cases is handled if the for loop is not executed
+# in this case h is also i
+# edge cases is handled, when the only item is 0, which returns 0
