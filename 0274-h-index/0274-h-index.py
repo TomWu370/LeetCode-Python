@@ -6,6 +6,7 @@ class Solution:
                 return i
         return 0
 
+    
 # intuition, go from big to small, iterate backward from len of citations
 # check if there are at most h paper, with atleast h citations
 # intuition, it's better to first sort the list, then check if the len-ith place is atleast h citations
